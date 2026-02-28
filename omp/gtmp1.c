@@ -5,7 +5,7 @@
 
 static int g_num_threads = 0;
 static int count = 0;
-static bool sense = false;
+static volatile bool sense = false;
 static bool *my_sense = NULL;
 
 void gtmp_init(int num_threads){
